@@ -13,7 +13,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        return response()->json(Post::all());
+        $post = Post::all();
+        return response()->json($post);
     }
 
     /**
